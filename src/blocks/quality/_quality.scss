@@ -1,0 +1,54 @@
+.quality {
+
+    background-color: #1d1d23;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 199px;
+        left: 0;
+        width: 100%;
+        height: 89%;
+        background-image: url(../img/shape.svg);
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/quality-background-one.png), url(../img/quality-background-two.png), url(../img/quality-background-three.png);
+        background-repeat: no-repeat;
+        background-position: 100% 6%, 100% 90%, 0% 90%;
+        z-index: 2;
+    }
+
+    &__wrapper {
+        padding-top: 70px;
+        padding-bottom: 1062px;
+    }
+
+    &__info {
+        position: relative;
+        z-index: 3;
+        padding-top: 497px;
+        color: #fff;
+        margin-left: 35px;
+    }
+
+    &__title {
+        font-size: 50px;
+        margin-bottom: 25px
+    }
+
+    &__paragraph {
+        font-size: 33px;
+        font-size: 33px;
+        line-height: 41px;
+    }
+}
